@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sponsorship Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2><center>Sponsorship Application</center></h2>
+
+      <h3>Company Information</h3>
+      <p>(<span class="mandatory">*</span>) Denote mandatory fields.</p>
+      <form>
+        <!-- Company Information Section -->
+        <div class="form-section form-flex">
+          <div class="form-group">
+            <label for="company-name"
+              >Company Name <span class="mandatory">*</span></label
+            >
+            <input type="text" id="company-name" name="company-name" required />
+          </div>
+          <div class="form-group">
+            <label for="company-website"
+              >Company Website <span class="mandatory">*</span></label
+            >
+            <input
+              type="url"
+              id="company-website"
+              name="company-website"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="company-logo"
+              >Company Logo <span class="mandatory">*</span></label
+            >
+            <input
+              type="file"
+              id="company-logo"
+              name="company-logo"
+              accept=".jpg, .jpeg, .png, .ai, .psd"
+              required
+            />
+            <small
+              >Please attach high resolution image / ai / psd file. (max 20
+              MB)</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="address"
+              >Address <span class="mandatory">*</span></label
+            >
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="city">City <span class="mandatory">*</span></label>
+            <input type="text" id="city" name="city" required />
+          </div>
+          <div class="form-group">
+            <label for="state"
+              >State/Province <span class="mandatory">*</span></label
+            >
+            <input type="text" id="state" name="state" required />
+          </div>
+          <div class="form-group">
+            <label for="zip"
+              >ZIP / Postal Code <span class="mandatory">*</span></label
+            >
+            <input type="text" id="zip" name="zip" required />
+          </div>
+          <div class="form-group">
+            <label for="country"
+              >Country <span class="mandatory">*</span></label
+            >
+            <select id="country" name="country" required>
+              <option value="">Select country</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <h3>Contact Information</h3>
+        <div class="form-section form-flex">
+          <div class="form-group">
+            <label for="first-name"
+              >First Name <span class="mandatory">*</span></label
+            >
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="middle-name">Middle Name</label>
+            <input type="text" id="middle-name" name="middle-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name"
+              >Last Name <span class="mandatory">*</span></label
+            >
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="job-title" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="mandatory">*</span></label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="mandatory">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="fax">Fax</label>
+            <input type="text" id="fax" name="fax" />
+          </div>
+          <div class="form-group">
+            <label for="mailing-address"
+              >Mailing Address <span class="mandatory">*</span></label
+            >
+            <input
+              type="text"
+              id="mailing-address"
+              name="mailing-address"
+              required
+            />
+          </div>
+        </div>
+
+   <!-- Sponsorship Level Section -->
+<h3>Sponsorship Package</h3>
+<div class="form-section">
+  <table class="sponsorship-table">
+    <thead>
+      <tr>
+        <th>Sponsors Levels</th>
+        <th>Diamond</th>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Bronze</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold-text">Sponsor name/logo shown on the IV website with a link to the sponsor’s website</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Sponsor is mentioned at the opening ceremony and banquet</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Awards with the sponsor name</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Speech by the sponsor at the opening ceremony of the conference</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Sponsor name/logo shown on the attendee name tag and official conference bag</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>E-newsletter advertisement (with sponsor-provided materials)</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Exhibition Booth</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Short video play before the Keynote speech (once/2 min.)</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Reception / Banquet tickets</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>$5000</td>
+        <td>$3000</td>
+        <td>$2000</td>
+        <td>$1000</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*We only provide the space, the exhibitor must arrange a local booth builder.</p>
+  <div class="form-group">
+    <label for="sponsor-level">Sponsors level</label>
+    <select id="sponsor-level" name="sponsor-level" required>
+      <option value="">Diamond</option>
+      <option value="">Gold</option>
+      <option value="">Silver</option>
+      <option value="">Bronze</option>
+    </select>
+  </div>
+</div>
+
+<div class="pricing-table">
+  <table>
+    <tr>
+      <th>Exhibition Option</th>
+      <th>1 Booth</th>
+    </tr>
+    <tr>
+      <td>*Standard Exhibition (3 x 3m)</td>
+      <td>$1250</td>
+    </tr>
+  </table>
+</div>
+<p>*We only provide the space, the exhibitor must arrange a local booth builder.</p>
+<div class="form-group">
+  <label for="exhibition-option">Exhibition option *</label>
+  <select id="exhibition-option" name="exhibition-option" required>
+    <option value="Standard Exhibition">Standard Exhibition</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="quantity-of-booth">Quantity of booth *</label>
+  <select id="quantity-of-booth" name="quantity-of-booth" required>
+    <option value="1">1</option>
+  </select>
+</div>
+
+
+        <!-- Payment Information Section -->
+        <h3>Payment Information</h3>
+        <div class="form-section form-flex">
+          <div class="form-group">
+            <label for="payment-method"
+              >Payment Method <span class="mandatory">*</span></label
+            >
+            <select id="payment-method" name="payment-method" required>
+              <option value="">Select payment method</option>
+              <option value="credit-card">Credit Card</option>
+              <option value="bank-transfer">Bank Transfer</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="card-number"
+              >Card Number <span class="mandatory">*</span></label
+            >
+            <input type="text" id="card-number" name="card-number" required />
+          </div>
+          <div class="form-group">
+            <label for="expiry-date"
+              >Expiry Date <span class="mandatory">*</span></label
+            >
+            <input
+              type="text"
+              id="expiry-date"
+              name="expiry-date"
+              placeholder="MM/YY"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV <span class="mandatory">*</span></label>
+            <input type="text" id="cvv" name="cvv" required />
+          </div>
+        </div>
+
+        <!-- Terms and Conditions Section -->
+        <h3>Terms and Conditions</h3>
+
+        <p class="termspara">
+          We hereby maintain compliance with CONDITIONS AND REGULATIONS and
+          apply for the participation of the IEEE IV 2024.
+        </p>
+        <div class="checkbox-container">
+          <input
+            type="checkbox"
+            id="termcheckbox"
+            name="termcheckbox"
+            required
+          />
+          <label for="termcheckbox" class="termspara">I agree to the terms and Conditions.</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        <!-- <button type="submit"  class="w3-button w3-white w3-border w3-border-red w3-round-large">Button</button> -->
+      </form>
+    </div>
+  </body>
+</html>

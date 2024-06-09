@@ -1,0 +1,329 @@
+.bold-text {
+  font-weight: bold;
+}
+
+
+/* Sponsorship Package Section */
+.sponsorship-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.sponsorship-table th,
+.sponsorship-table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f8ff;
+  color: #000;
+  
+  font-weight: normal;
+}
+
+.sponsorship-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sponsorship-table td {
+  background-color: #f9f9f9;
+}
+
+.sponsorship-table td:nth-child(2) {
+  background-color: #d4edda; /* Diamond */
+}
+
+.sponsorship-table td:nth-child(3) {
+  background-color: #ffeeba; /* Gold */
+}
+
+.sponsorship-table td:nth-child(4) {
+  background-color: #cce5ff; /* Silver */
+}
+
+.sponsorship-table td:nth-child(5) {
+  background-color: #f8d7da; /* Bronze */
+}
+
+.sponsorship-table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Pricing Table */
+.pricing-table {
+  margin-top: 20px;
+}
+
+.pricing-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f8ff;
+  color: #000;
+  font-weight: normal;
+}
+
+.pricing-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pricing-table td {
+  background-color: #f9f9f9;
+}
+
+.pricing-table tr:hover {
+  background-color: #e9ecef;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e7ff; /* Light blue background color */
+  margin: 0;
+  padding: 20px;
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+.termspara{
+ font-weight: 520;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: italic;
+  margin: 1em 0 0.5em 0;
+  color: #2506d4;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+h2:after,
+h2:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #c50000;
+  border-top: 1px solid #c50000;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  border: 2px solid #222;
+  padding: 5px 11px 3px 11px;
+  margin-bottom: 15px;
+}
+
+h3:before, h3:after {
+  background-color: #c50000;
+  position: absolute;
+  content: '';
+  height: 7px;
+  width: 10px;
+  border-radius: 50%;
+  bottom: 12px;
+}
+
+h3:before {
+  left: -20px;
+}
+
+h3:after {
+  right: -20px;
+}
+
+.mandatory {
+  color: #ff0000;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  flex: 1;
+  min-width: 45%; /* Ensure the form groups have enough space */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="file"] {
+  padding: 3px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+}
+
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between form groups */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #555;
+  font-weight: normal;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form-section {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #d3d3d3;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+button {
+  background-color: #28a745;
+  color: #ffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 190px;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+/* Add this CSS rule to align form groups side by side */
+.form-section.form-flex .form-group {
+  flex: 1;
+  min-width: calc(45% - 10px); /* Adjust the width as needed */
+}
+
+/* Add this CSS rule to ensure the last form group doesn't have a margin-right */
+.form-section.form-flex .form-group:last-child {
+  margin-right: 0;
+}
+
+/* Bold Text Class */
